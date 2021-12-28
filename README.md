@@ -55,7 +55,7 @@ User Schema
   }
   ```
   - **Resovers:** 
- Resolver is a collection of functions that generate response for a GraphQL query. In simple terms, a resolver acts as a GraphQL query handler.
+ Resolver is a collection of functions that generate response for a GraphQL query. In simple terms, a resolver acts as a GraphQL query handler.Resolvers provide the instructions for turning a GraphQL operation into data. They resolve the query to data by defining resolver functions.
 
 ```
 fieldName:(root, args, context, info) => { result }
@@ -87,6 +87,33 @@ fieldName:(root, args, context, info) => { result }
 <p>It contains information about the execution state of the query, including the field name, path to the field from the root.</p></td>
 </tr>
 </tbody></table>
+
+
+ - **Query:** 
+  Query is an entry point, from which client can fetch the data.
+
+```
+type Query {
+    getUsers(id :ID, userName: String): [User]    
+    
+  }
+
+``` 
+Here Query is an entry point and getUsers is defined as a resolver function, id and userName is defined as argument which can be passed in function and filter the data. User is defined for user schema which will access and validate the fields user schema.
+
+
+- **Mutation:** Mutation queries modify data in the data store and returns a value. It can be used to insert, update, or delete data. Mutations are defined as a part of the schema.
+
+```
+type Mutation{
+  addUser(input: UserInput): [User]
+}
+
+``` 
+
+Here Mutation is an entry point and addUser is defined as a resolver function which will insert the users data into database, UserInput is defined as schema which will access and validate the fields UserInput schema.
+
+
   
   # Working engine of GraphQL
   <img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2021/10/word-image-4.png" />
