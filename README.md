@@ -40,3 +40,5 @@ GraphQL gives permission to the client that what do they want to fetch the exact
     }
 
   ```
+  
+  <img src="https://i0.wp.com/lab.wallarm.com/wp-content/uploads/2021/04/1.jpg?w=800&ssl=1" />
