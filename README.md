@@ -43,7 +43,86 @@ GraphQL gives permission to the client that what do they want to fetch the exact
 
   ```
   
-  # Schemas, resolvers, and other common GraphQL terms
+  
+  **Type System**
+
+GraphQL is a strongly typed language. Type System defines various data types that can be used in a GraphQL application. The type system helps to define the schema, which is a contract between client and server. The commonly used GraphQL data types are as follows −
+<table>
+<tbody><tr>
+<th style="text-align:center; width:12%;">Sr.No.</th>
+<th style="text-align:center;">Types &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td><p><b>Scalar</b></p>
+<p>Stores a single value</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td><p><b>Object</b></p>
+<p>Shows what kind of object can be fetched</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td><p><b>Query</b></p>
+<p>Entry point type to other specific types</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td><p><b>Mutation</b></p>
+<p>Entry point for data manipulation</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td><p><b>Enum</b></p>
+<p>Useful in a situation where you need the user to pick from a prescribed list of options</p></td>
+</tr>
+</tbody></table>
+
+
+
+ # Scalar Type
+ 
+ 
+  Scalar types are primitive data types that can store only a single value. The default scalar types that GraphQL offers are −
+
+  -  **Int −** Signed 32-bit Integer
+
+  - **Float −**  Signed double precision floating point value
+
+  - **String −** UTF - 8-character sequence
+
+  -  **Boolean −** True or false
+
+  -  **ID −** A unique identifier, often used as a unique identifier to fetch an object or as the key for a cache.
+ 
+
+  - **Object Type−**
+    The object type is the most common type used in a schema and represents a group of fields. Each field inside an object type maps to another type, thereby allowing nested types. In other words, an object type is composed of multiple scalar types or object types.
+
+    The syntax for defining an object type is-
+
+
+    ```
+
+      type object_type_name
+				{
+				   field1: data_type
+				   field2:data_type 
+				   ....
+				   fieldn:data_type
+				}
+				
+
+    ``` 
+  
+  
+  
+  
+  
+  
+  
+  # Schemas, resolvers, Query and Mutation GraphQL terms
   - **Schemas:**  GraphQL describes the functionality available to the client applications that connect to it. A GraphQL schema is made up of object types, which define which kind of object you can request and what fields it has.As queries come in, GraphQL validates the queries against the schema. GraphQL then executes the validated queries. 
 ```
 User Schema
