@@ -1,35 +1,34 @@
 **GraphQL + Deno + Oak Framework + PostgresQL**
-<table>
-  <thead>
-    <tr>
-      <th>Describe your data</th>
-      <th>Ask for what you want</th>
-      <th>Get predictable results</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        type Project {
-          name: String
-          tagline: String
-          contributors: [User]
-        }
-      </td>
-      <td>
-         {
-          project(name: "GraphQL") {
-            tagline
+
+# Introduction GraphQL
+GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.
+The real secret is that GraphQL ensures that the developer and application only loads the relevant and absolute necessary data, even if it's from multiple sources(tables).
+GraphQL server returns predicted data in responses that are described in request by the client, so it is fast in loading.
+
+  **Describe your data**
+  ```
+   type User {
+      userName: String
+      email: String
+      address: String
+      pincode: Int
+    }
+ ``` 
+ 
+ **Ask for what you want**
+ ```     
+      {
+          User(name: "Krishna") {
+            userName
           }
         }
-      </td>
-      <td>
-        {
-            "project": {
-              "tagline": "A query language for APIs"
-            }
-          }
-      </td>
-    </tr>
-  </tbody>
-  </table>
+ ```
+  **Get predictable results**    
+  ```
+   {
+      "User": {
+        "UserName": "Krishna"
+      }
+    }
+
+  ```
