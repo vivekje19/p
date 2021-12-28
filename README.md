@@ -169,29 +169,31 @@ await app.listen({ port: 8080 });
 **Fetch Query**
 
 ```
+query{ 
+	getUsers{
+		id,
+		userName
+		email
+		contact     
+	}
+}
 
-	query{ 
-		getUsers{
-		    id,
-		    userName
-		    email
-		    contact     
-		  }
-		}
 
-		response
-		{
-	    "data": {
-        "getUsers": [
-          {
-            "id": "53",
-            "userName": "Vivek Ranjan Pandey",
-            "email": "raman@gmail.com",
-            "contact": 4554
-          }
-        ]
-	    }
-		}
+response
+
+
+{
+	"data": {
+		"getUsers": [
+			{
+				"id": "53",
+				"userName": "Vivek Ranjan Pandey",
+				"email": "raman@gmail.com",
+				"contact": 4554
+			}
+		]
+	}
+}
 		
 ```
 
@@ -200,35 +202,35 @@ await app.listen({ port: 8080 });
 **Insert Query**
 
 	```
-		Mutation
+Mutation
 
-		mutation{	
-   		addUser(input:{
-		    userName: "Vinay",
-		    email:"raman@gmail.com",
-		    country: "india",
-		    address:"Dih Ganjari Gangapur",
-		    contact:4554554,
-		    priority:HIGH
-  		}){
-		    id,
-		    userName
-		    email    
-  		}	
-		}
+	mutation{	
+		addUser(input:{
+			userName: "Vinay",
+			email:"raman@gmail.com",
+			country: "india",
+			address:"Dih Ganjari Gangapur",
+			contact:4554554,
+			priority:HIGH
+		}){
+			id,
+			userName
+			email    
+		}	
+	}
 
-		Response
+Response
 
-		{
-    	"data": {
-        "addUser": [
-          {
-            "id": "59",
-            "userName": "Vinay",
-            "email": "raman@gmail.com"
-          }
-        ]
-    	}
-		}
+{
+	"data": {
+		"addUser": [
+			{
+				"id": "59",
+				"userName": "Vinay",
+				"email": "raman@gmail.com"
+			}
+		]
+	}
+}
 
 	```
