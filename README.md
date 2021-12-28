@@ -201,7 +201,9 @@ response
 
 **Insert Query**
 
-	```
+```
+
+
 Mutation
 
 	mutation{	
@@ -234,4 +236,6 @@ Response
 		]
 	}
 }
+
+
 ```
