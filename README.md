@@ -224,13 +224,14 @@ Response
 {
 	"data": {
 		"addUser": [
+		
 			{
 				"id": "59",
 				"userName": "Vinay",
 				"email": "raman@gmail.com"
+				
 			}
 		]
 	}
 }
-
-	```
+```
