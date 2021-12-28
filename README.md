@@ -40,5 +40,5 @@ GraphQL gives permission to the client that what do they want to fetch the exact
     }
 
   ```
-  
-  <img src="https://lighthouse-php.com/assets/img/flow.f9dcf86d.png" />
+  # Working engine of GraphQL
+  <img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2021/10/word-image-4.png" />
