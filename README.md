@@ -120,16 +120,19 @@ GraphQL is a strongly typed language. Type System defines various data types tha
   **Enumeration types--**
   This is a special kind of scalar that is restricted to a particular set of allowed values, with the help of this type we can restrict to user for inserting value of a field.
 
- 	```
- 	Syntext
+ ```
+Syntext
 
- 	enum Priority {
+enum Priority {
     LOW
     MEDIUM
     HIGH
-  }
+}
 
-  ```
+
+```
+  
+  
 
 **Interfaces --**
 
