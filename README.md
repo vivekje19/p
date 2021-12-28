@@ -1,7 +1,7 @@
 **GraphQL + Deno + Oak Framework + PostgresQL**
 
 # Introduction GraphQL
-GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.
+GraphQL is a query language for APIs, not a database and a runtime for fulfilling application queries with existing data.
 The real secret is that GraphQL ensures that the developer and application only loads the relevant and absolute necessary data, even if it's from multiple sources(tables).
 GraphQL server returns predicted data in responses that are described in request by the client, so it is fast in loading.
 
@@ -18,8 +18,9 @@ GraphQL server returns predicted data in responses that are described in request
  **Ask for what you want**
  ```     
       {
-          User(name: "Krishna") {
+          User {
             userName
+            email
           }
         }
  ```
@@ -27,7 +28,12 @@ GraphQL server returns predicted data in responses that are described in request
   ```
    {
       "User": {
-        "UserName": "Krishna"
+        "UserName": "Krishna",
+        "email": "krishna@gmail.com"
+      },
+      {
+        "UserName": "Ram",
+        "email": "ram@gmail.com"
       }
     }
 
