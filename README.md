@@ -105,13 +105,12 @@ GraphQL is a strongly typed language. Type System defines various data types tha
 
     ```
 
-      type object_type_name
-				{
-				   field1: data_type
-				   field2:data_type 
-				   ....
-				   fieldn:data_type
-				}
+       type object_type_name{
+	   field1: data_type
+	   field2:data_type 
+	   ....
+	   fieldn:data_type
+	}
 				
 
     ``` 
