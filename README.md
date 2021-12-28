@@ -117,6 +117,49 @@ GraphQL is a strongly typed language. Type System defines various data types tha
   
   
   
+  **Enumeration types--**
+  This is a special kind of scalar that is restricted to a particular set of allowed values, with the help of this type we can restrict to user for inserting value of a field.
+
+ 	```
+ 	Syntext
+
+ 	enum Priority {
+    LOW
+    MEDIUM
+    HIGH
+  }
+
+  ```
+
+**Interfaces --**
+
+An Interface is an abstract type that includes a certain set of fields that a type must include to implement the interface.
+
+
+```
+	Syntext
+
+	interface Address {
+    address: String  
+    country: String
+    pincode: Int
+  }
+
+
+  type User implements Address {
+    id: ID!
+    userName: String
+    email: String  
+    contact: Int
+    address: String  
+    country: String
+    pincode: Int
+    priority:  Priority!  
+  }
+
+```  
+  
+  
   
   
   
