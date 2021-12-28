@@ -110,8 +110,7 @@ type Mutation{
 }
 
 ``` 
-
-Here Mutation is an entry point and addUser is defined as a resolver function which will insert the users data into database, UserInput is defined as schema which will access and validate the fields UserInput schema.
+Here Mutation is an entry point and addUser is defined as a resolver function which will insert the users data into database, UserInput is defined as schema which will access and validate the fields UserInput schema. User is also a defined schema and it is used here that after inserting  addUser resolver return inserted user data according to User scema.
 
 
   
