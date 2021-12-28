@@ -44,7 +44,7 @@ GraphQL gives permission to the client that what do they want to fetch the exact
   ```
   
   
-  **Type System**
+  # Type System in GraphQL
 
 GraphQL is a strongly typed language. Type System defines various data types that can be used in a GraphQL application. The type system helps to define the schema, which is a contract between client and server. The commonly used GraphQL data types are as follows −
 <table>
@@ -81,7 +81,7 @@ GraphQL is a strongly typed language. Type System defines various data types tha
 
 
 
- # Scalar Type
+ **Scalar Type**
  
  
   Scalar types are primitive data types that can store only a single value. The default scalar types that GraphQL offers are −
