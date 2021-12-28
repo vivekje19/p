@@ -133,7 +133,9 @@ User Schema
   }
   ```
   - **Resovers:** 
- Resolver is a collection of functions that generate response for a GraphQL query. In simple terms, a resolver acts as a GraphQL query handler.Resolvers provide the instructions for turning a GraphQL operation into data. They resolve the query to data by defining resolver functions.
+ Resolver is a collection of functions that generate response for a GraphQL query. In simple terms, GraphQL server won’t know what to do with an incoming query unless you tell it using a resolver.A resolver tells GraphQL how and where to fetch, insert, update and delete  the data corresponding to a given field.
+ 
+ 
 
 ```
 fieldName:(root, args, context, info) => { result }
